@@ -28,7 +28,7 @@ int main(){
     for(int i=0; i<n; i++){
         g[i].get();
         g[i].abc();
-        g[i].seat();
+        guest::seat();
     }
     cout<<"List of guests with their seat number are: "<<endl;
     for(int i=0; i<n; i++){
