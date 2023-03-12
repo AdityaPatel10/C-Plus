@@ -8,15 +8,18 @@ class insta{
         pass= "Aditya.543";
     }
     void LogIn(){
-        cout<<"Enter the username: ";
-        cin>>u;
-        cout<<"Enter your password: ";
-        cin>>p;
-        if(u==user && p==pass){
-            cout<<"Login Successfully!";
-        }
-        else{
-            cout<<"Wrong username and password";
+        for(int i=0; i<5; i++){
+            cout<<"Enter the username: ";
+            cin>>u;
+            cout<<"Enter your password: ";
+            cin>>p;
+            if(u==user && p==pass){
+                cout<<"Login Successfully!";
+                break;
+            }
+            else{
+                cout<<"Wrong username and password"<<endl;
+            }
         }
     }
 };
