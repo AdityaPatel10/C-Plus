@@ -22,6 +22,6 @@ int main(){
     abc o1;
     o1.show();
     abc o2=o1;
-    cout<<"Copied"
+    cout<<"Copied";
     o2.show();
 }
