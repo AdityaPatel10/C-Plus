@@ -14,7 +14,7 @@ void Display(int a[], int n){
     }
 }
 void Insert(int a[], int n, int in){
-    int num;;
+    int num;
     cout<<"press 0 if you want to insert element to you specific position."<<endl;
     cout<<"press 1 to insert the element at the end of the array."<<endl;
     cin>>num;
@@ -27,6 +27,7 @@ void Insert(int a[], int n, int in){
             for(int i=n-1; i>=pos; i--){
                 a[i]=a[i-1];
                 if(i==pos){
+                    cout<<"Enter the element to insert in a["<<i<<"]: ";
                     cin>>a[pos];
                     break;
                 }
