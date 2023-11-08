@@ -19,7 +19,7 @@ int Stack::push(int X){
     else{
         top++;
         stack[top]=X;
-        cout<<X<<" pushed into the stack."<<endl;
+        cout<<stack[top]<<" pushed into the stack."<<endl;
     }
 }
 int Stack::pop(){
