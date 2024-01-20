@@ -1,19 +1,21 @@
 #include<iostream>
 using namespace std;
-int *Selection(int a[], int n){
-    int i, loc, j, temp;
+void Selection(int a[], int n){
+    int i, j, temp, min;
     for(i=0 ; i<n-1 ; i++){
+        min = i;
         for(j=i+1; j<n ; j++){
-            if(a[i]>a[j]){
-                temp=a[i];
-                a[i]=a[j];
-                a[j]=temp;
-            }
+            if(a[i]<a[min])
+                min=j;
+        }
+        if(min!=i){
+            temp = a[i];
+            a[i] = a[min];
+            a[min] = temp;
         }
     }
-    return a;
 }       
-int Display(int a[], int n){
+void Display(int a[], int n){
     for(int i=0 ; i<n ; i++){
         cout<<"Value of a["<<i<<"]= "<<a[i]<<endl;
     }
